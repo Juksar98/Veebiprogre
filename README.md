@@ -1,2 +1,0 @@
-# Veebiprogre
-Iseseisev grupitöö
