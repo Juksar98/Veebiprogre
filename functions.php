@@ -2,7 +2,7 @@
 
 
 $database = "if17_janross";
-//require("../../../config.php");
+require("config.php");
 
 //alustame sessiooni	
 session_start();
@@ -34,7 +34,7 @@ function listMsg(){
 
 <?php
 	$database = "if17_oskarj";
-	//require("../../../config.php");
+	require("../../../config.php");
 	
 	session_start();
 	
@@ -100,7 +100,7 @@ function listMsg(){
 //Et pääseks ligi funktsioonidele ja sessionile
 require("functions.php");
 $notice = "";
-//require("../../../config.php");
+require("../../../config.php");
 	
 if(isset($_POST["saveMessage"])){
 	
