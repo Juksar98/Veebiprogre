@@ -1,8 +1,8 @@
 <?php
 require("registyle.css");
 //require("index.js");
-require("regifunctions.php");
-require("../../../config.php");
+require("functions.php");
+require("config.php");
 	
 	$signupFirstName = "";
 	$signupFamilyName = "";
