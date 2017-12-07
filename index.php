@@ -4,7 +4,7 @@
 //Et pääseks ligi funktsioonidele ja sessionile
 require("functions.php");
 $notice = "";
-require("../../../config.php");
+require("config.php");
 	
 if(isset($_POST["saveMessage"])){
 	
