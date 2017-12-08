@@ -28,7 +28,6 @@ if(isset($_GET["Logout"])){
 	<meta charset="utf-8">
 	<ul>
 	<li><a href="main.php">Pealeht</a></li>
-	<li><a href="lehed.php">Huvitavad leheküljed</a></li>
 	<li><a href="?Logout=1">Logi välja!</a></li>
 	</ul>
 	<title>Pealeht</title>
@@ -37,8 +36,17 @@ if(isset($_GET["Logout"])){
 
 
 <body>
-	<h2>Põnevad leheküljed</h2><br>
-	<p>Normaalne</p>
+	<h2>Digitehnoloogiate instituut</h2><br>
+	<select name="aine" onchange="location = this.value;">
+	<option value="0" selected="selected">Vali endale sobiv aine..</option>
+	<option value="mata.php">Matemaatika</option>
+	<option value="info.php">Informaatika</option>
+	<option value="teadus.php">Infoteadus</option>
+	</select>
+	
+	<p>Palun mitte jagada neid väärtuslikke faile kellegagi väljastpoolt kooli!</p>
+	
+	
 	
 	
 </body>
