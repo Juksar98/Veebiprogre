@@ -3,7 +3,7 @@
 session_start();
 $database = "if17_oskarj";
 require("config.php");
-
+//lahw
 	
 	
 	function signIn($loginEmail, $loginPassword){
