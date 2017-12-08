@@ -1,5 +1,3 @@
-
-
 <?php
 //Et pääseks ligi funktsioonidele ja sessionile
 
@@ -7,11 +5,11 @@ $notice = "";
 require("config.php");
 require("functions.php");
 	
-/*	//Kui pole sisseloginud, liigume login lehele
+	//Kui pole sisseloginud, liigume login lehele
 if(!isset($_SESSION["userId"])){
 	header("Location: login.php");
 	exit();
-}		*/
+}		
  //Logi välja funktsioon
 if(isset($_GET["Logout"])){
 	session_destroy();

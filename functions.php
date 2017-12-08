@@ -6,37 +6,38 @@ require("config.php");
 
 	
 	
-function signIn($email, $password){
-	$notice = "";
-	$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
-	$stmt = $mysqli->prepare("SELECT id, firstname, lastname, email, password FROM chatusers WHERE email = ?");
-	$stmt->bind_param("s", $email);
-	$stmt->bind_result($id, $firstnameFromDb, $lastnameFromDb, $emailFromDb, $passwordFromDb);
-	$stmt->execute();
-	
-	//kontrollime vastavust
-	if ($stmt->fetch()){
-		$hash = hash("sha512", $password);
-		if ($hash == $passwordFromDb){
-			$notice = "Logisite sisse!";
-			
-			//Määran sessiooni muutujad
-			$_SESSION["userId"] = $id;
-			$_SESSION["firstname"] = $firstnameFromDb;
-			$_SESSION["lastname"] = $lastnameFromDb;
-			$_SESSION["userEmail"] = $emailFromDb;
-			
-			//liigume pealehele
-			header("Location: index.php");
-			exit();
+	function signIn($loginEmail, $loginPassword){
+		$notice = "";
+		$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
+		$stmt = $mysqli->prepare("SELECT id, firstname, lastname, email, password FROM chatusers WHERE email = ?");
+		$stmt->bind_param("s", $loginEmail);
+		$stmt->bind_result($id, $firstnameFromDb, $lastnameFromDb, $emailFromDb, $passwordFromDb);
+		$stmt->execute();
+		
+		//kontrollime vastavust
+		if ($stmt->fetch()){
+			$hash = hash("sha512", $loginPassword);
+			if ($hash == $passwordFromDb){
+				$notice = "Logisite sisse!";
+				
+				//Määran sessiooni muutujad
+				$_SESSION["userId"] = $id;
+				$_SESSION["firstname"] = $firstnameFromDb;
+				$_SESSION["lastname"] = $lastnameFromDb;
+				$_SESSION["userEmail"] = $emailFromDb;
+				
+				//liigume pealehele
+				header("Location: index.php");
+				exit();
+			} else {
+				$notice = "Sisestasite vale salasõna!";
+			}
 		} else {
-			$notice = "Sisestasite vale salasõna!";
+			$notice = "Sellist kasutajat (" .$email .") ei ole!";
 		}
-	} else {
-		$notice = "Sellist kasutajat (" .$email .") ei ole!";
+		return $notice;
 	}
-	return $notice;
-}
+
 
 //uue kasutaja andmebaasi lisamine
 function signUp($signupFirstName, $signupFamilyName, $signupEmail, $signupPassword){

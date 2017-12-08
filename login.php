@@ -3,39 +3,28 @@
 	require("functions.php");
 	require("config.php");
 	
+	$notice = "";
+	$loginEmail = "";
+	$loginPassword = "";
+	$loginEmailError = "";
+	$loginPasswordError = "";
 	
-	$email = "";
-	$password = "";
-	$emailError = "";
-	$passwordError = "";
-	
-	/*if(isset($_SESSION["userId"])){
-		header("Location: index.php");
-		exit();
-	}*/
+
+		//kas klõpsati sisselogimise nuppu
 	if(isset($_POST["loginButton"])){
 	
-	if (isset ($_POST["email"])){
-		if (empty($_POST["email"])){
-			$emailError ="NB! Väli on kohustuslik!";
+	//kas on kasutajanimi sisestatud
+	if (isset ($_POST["loginEmail"])){
+		if (empty ($_POST["loginEmail"])){
+			$loginEmailError ="NB! Sisselogimiseks on vajalik kasutajatunnus (e-posti aadress)!";
 		} else {
-			$email =($_POST["email"]);
+			$loginEmail = $_POST["loginEmail"];
 		}
 	}
 	
-	if (isset ($_POST["password"])){
-		if (empty($_POST["password"])){
-			$passwordError ="NB! Väli on kohustuslik!";
-		} else {
-			$password =($_POST["password"]);
-		}
-	}
-
-
-	if (!empty($emailError) and !empty($passwordError)){
-			echo "Login sisse!";
-			$password = hash("sha512", $_POST["password"]);
-			signIn($email, $password);
+	if(!empty($loginEmail) and !empty($_POST["loginPassword"])){
+		//echo "Logime sisse!";
+		$notice = signIn($loginEmail, $_POST["loginPassword"]);
 	}
 	}
 	
@@ -60,10 +49,9 @@
   <div class="form">
   <h1>Logi Sisse</h1>
     <form class="login-form" method="POST">
-      <input type="text" name="email" placeholder="Email" required />
-      <input type="password" name="password" placeholder="Parool" required />
-      <button name="loginButton"><a>
-	  Logi sisse</a></button>
+      <input type="text" name="loginEmail" placeholder="Email" required />
+      <input type="password" name="loginPassword" placeholder="Parool" required />
+      <input name="loginButton" type="submit" value="Logi Sisse"> <span><?php echo $notice; ?></span>
     </form>
   </div>
 </div>
