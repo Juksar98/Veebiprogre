@@ -1,4 +1,5 @@
 <?php
+
 require("functions.php");
 require("registyle.css");
 //require("index.js");
