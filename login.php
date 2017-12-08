@@ -1,19 +1,25 @@
 <?php
 	require("style.css");
 	require("functions.php");
+	require("config.php");
+	
 	
 	$email = "";
 	$password = "";
 	$emailError = "";
 	$passwordError = "";
 	
+	/*if(isset($_SESSION["userId"])){
+		header("Location: index.php");
+		exit();
+	}*/
 	if(isset($_POST["loginButton"])){
 	
 	if (isset ($_POST["email"])){
 		if (empty($_POST["email"])){
 			$emailError ="NB! Väli on kohustuslik!";
 		} else {
-			$email = test_input($_POST["email"]);
+			$email =($_POST["email"]);
 		}
 	}
 	
@@ -21,7 +27,7 @@
 		if (empty($_POST["password"])){
 			$passwordError ="NB! Väli on kohustuslik!";
 		} else {
-			$password = test_input($_POST["password"]);
+			$password =($_POST["password"]);
 		}
 	}
 
@@ -32,6 +38,7 @@
 			signIn($email, $password);
 	}
 	}
+	
 ?>
 
 <!DOCTYPE html>
@@ -52,10 +59,10 @@
   <div class="login-page">
   <div class="form">
   <h1>Logi Sisse</h1>
-    <form class="login-form">
+    <form class="login-form" method="POST">
       <input type="text" name="email" placeholder="Email" required />
       <input type="password" name="password" placeholder="Parool" required />
-      <button name="loginButton"><a href="index.php">
+      <button name="loginButton"><a>
 	  Logi sisse</a></button>
     </form>
   </div>

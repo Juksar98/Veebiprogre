@@ -19,7 +19,7 @@ require("config.php");
 		if (empty($_POST["signupFirstName"])){
 			$signupFirstNameError ="NB! Väli on kohustuslik!";
 		} else {
-			$signupFirstName = test_input($_POST["signupFirstName"]);
+			$signupFirstName =($_POST["signupFirstName"]);
 		}
 	}
 	
@@ -27,7 +27,7 @@ require("config.php");
 		if (empty($_POST["signupFamilyName"])){
 			$signupFamilyNameError ="NB! Väli on kohustuslik!";
 		} else {
-			$signupFamilyName = test_input($_POST["signupFamilyName"]);
+			$signupFamilyName =($_POST["signupFamilyName"]);
 		}
 	}
 
@@ -35,7 +35,7 @@ require("config.php");
 		if (empty ($_POST["signupEmail"])){
 			$signupEmailError ="NB! Väli on kohustuslik!";
 		} else {
-			$signupEmail = test_input($_POST["signupEmail"]);
+			$signupEmail =($_POST["signupEmail"]);
 						
 			$signupEmail = filter_var($signupEmail, FILTER_SANITIZE_EMAIL);
 			$signupEmail = filter_var($signupEmail, FILTER_VALIDATE_EMAIL);
@@ -51,28 +51,30 @@ require("config.php");
 			}
 		}
 	}
-		
-	if (!empty($signupFirstNameError) and !empty($signupFamilyNameError) and !empty($signupEmailError) and !empty($signupPasswordError)){
+		$signupPassword = hash("sha512", $_POST["signupPassword"]);
+		signUp($signupFirstName, $signupFamilyName, $signupEmail, $signupPassword);
+	/*	
+	if (!empty($_POST["signupButton"])){
 		echo "Hakkan salvestama!";
 		$signupPassword = hash("sha512", $_POST["signupPassword"]);
 		signUp($signupFirstName, $signupFamilyName, $signupEmail, $signupPassword);
-	}
+	}*/
 	}
 ?>
 <!DOCTYPE html>
 
-<form action="index.php" method="get">
-  <h1>Registeeri</h1><br/>
+<form  method="POST">
+  <h1>Registreeri</h1><br/>
 
   <span class="input"></span>
   <input type="text" name="signupFirstName" placeholder="Eesnimi" required />
   <span class="input"></span>
-  <input type="text" name="signupFamilyNameName" placeholder="Perekonnanimi" required />
+  <input type="text" name="signupFamilyName" placeholder="Perekonnanimi" required />
   <span class="input"></span>
   <input type="email" name="signupEmail" placeholder="Email" required />
   <span id="passwordMeter"></span>
   <input type="password" name="signupPassword" id="password" placeholder="Parool" required />
 
-  <button type="submit" name="signupButton" value="Sign Up" title="Submit form" class="icon-arrow-right"><span>Registeeru</span></button>
+  <button type="submit" name="signupButton" value="Sign Up" title="Submit form" class="icon-arrow-right" ><span>Registreeru</span></button>
 </form>
 </html>

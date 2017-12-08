@@ -2,16 +2,23 @@
 
 <?php
 //Et pääseks ligi funktsioonidele ja sessionile
-require("functions.php");
+
 $notice = "";
 require("config.php");
+require("functions.php");
 	
-if(isset($_POST["saveMessage"])){
-	
-	if(isset($_POST["sonum"]) and !empty($_POST["sonum"])){
-		$notice = saveMsg($_POST["sonum"]);
-	}
+/*	//Kui pole sisseloginud, liigume login lehele
+if(!isset($_SESSION["userId"])){
+	header("Location: login.php");
+	exit();
+}		*/
+ //Logi välja funktsioon
+if(isset($_GET["Logout"])){
+	session_destroy();
+	header("Location: login.php");
+	exit();
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -19,27 +26,21 @@ if(isset($_POST["saveMessage"])){
 
 
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="indexstyle.css">
 	<meta charset="utf-8">
+	<ul>
+	<li><a href="main.php">Pealeht</a></li>
+	<li><a href="lehed.php">Huvitavad leheküljed</a></li>
+	<li><a href="?Logout=1">Logi välja!</a></li>
+	</ul>
+	<title>Pealeht</title>
 </head>
 
 
 
 <body>
-	<h2>Chati nimi</h2>
-	<div style="chatbox">
-		<div class="chatbox">
-		<?php echo listMsg(); ?>
-		</div>
-	</div>
-	
-	<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-		<label>Text: </label>
-		<input name="sonum" type="text">
-		<input name="saveMessage" type="submit" value="Saada!">
-		<span><?php echo $notice; ?></span>
-		
-	</form>
+	<h2>Põnevad leheküljed</h2><br>
+	<p>Normaalne</p>
 	
 	
 </body>
