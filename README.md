@@ -1,4 +1,4 @@
-#TLÜ KODUTÖÖDE PORTAAL
+TLÜ KODUTÖÖDE PORTAAL<br>
 Iseseisev grupitöö <br>
 
 
@@ -32,15 +32,15 @@ tabelite loomise SQL laused: (kui keegi teine tahab seda tööle panna); - PUUDU
 
 <b>kokkuvõte: mida õppisid juurde? mis ebaõnnestus? mis oli keeruline? (kirjutab iga tiimi liige):</b>
 <br>
-<b>Jan-Ross Liiver:</b> 
-Õppisin rühmatöö raames seda, et tähtis on aru saada olemasolevatest resurssidest, mis sul kasutusel on. ntx github, niiväga kui see minu-
+<b>Jan-Ross Liiver:</b><br>
+Õppisin rühmatöö raames seda, et tähtis on aru saada olemasolevatest ressurssidest, mis sul kasutusel on. ntx github, niiväga kui see minu-
 arust ka ebamugav keskkond pole, on siiski funktsionaalne töökeskkond, mille kasutamist tuleb mõista, et kasutada seda otstarbekalt.
 Kõige keerulisem asi projekti juures oli mõelda välja aja raames realiseeritav idee. Ideid on palju, kuid praeguse taseme juures ei ole võimalik
 kõike reaalselt ellu luua. Teisisõnu oma piirangute ja võimaluste avastamine oli läbivaks õppeprotsessiks.
 
-<b>Peeter Roop:</b>
+<b>Peeter Roop:</b><br>
 
-<b>Oskar Juksar:</b>
+<b>Oskar Juksar:</b><br>
 
-<b>Robin Nurk:</b>
+<b>Robin Nurk:</b><br>
 
