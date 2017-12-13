@@ -38,6 +38,7 @@ Kõige keerulisem asi projekti juures oli mõelda välja aja raames realiseerita
 kõike reaalselt ellu luua. Teisisõnu oma piirangute ja võimaluste avastamine oli läbivaks õppeprotsessiks.
 
 <b>Peeter Roop:</b><br>
+Õppisin rühmatöö käigus, et peab korralikult koostööd tegema ja ülesanded ära jagama. 
 
 <b>Oskar Juksar:</b><br>
 
