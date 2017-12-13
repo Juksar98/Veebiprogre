@@ -1,3 +1,4 @@
+
 # Veebiprogre
 Iseseisev grupitöö
 TLÜ KODUTÖÖDE PORTAAL
@@ -20,10 +21,11 @@ mil analoogsed keskkonnad küsivad raha selle eest (ntx Annaabi.ee).
 Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasid alla laadida.
 
 <b>funktsionaalsuse leotelu:</b>
-1.saab teha kasutaja ja sisse logida
-2.saab üles laadida ja alla tõmmata faile
-saab navigeerida portaali lehtede vahel
-
+<ul>
+<li>1.saab teha kasutaja ja sisse logida</li>
+<li>2.saab üles laadida ja alla tõmmata faile</li>
+<li>saab navigeerida portaali lehtede vahel</li>
+</ul>
 
 andmebaasi skeem loetava pildina - PUUDUB
 tabelite loomise SQL laused: (kui keegi teine tahab seda tööle panna); - PUUDUB
