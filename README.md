@@ -1,36 +1,35 @@
 <h2>TLÜ KODUTÖÖDE PORTAAL</h2><br>
 Iseseisev grupitöö <br>
 
-
-(PILT)  - PUUDUB
+<b>Pilt portaalist:</b>  - PUUDUB<br>
 
 <b>Rühma liikmed:</b>
-Jan-Ross Liiver
-Peeter Roop
-Robin Nurk
+Jan-Ross Liiver,
+Peeter Roop,
+Robin Nurk,
 Oskar Juksar
 
-<b>eesmärk:</b>
+<b>Eesmärk:</b>
 Veebilehe eesmärk on luua ühine keskkond TLÜ tudengite kodutöödele.
 Kuna kodutööde kopeerimine on niigi probleem, siis selle keskonna loomine seda ei lahenda, kuid annab võimaluse näiteks ülesannete puhul,
 kus lahendustel pole ühtset vastust või ülesehitust, näha teiste perspektiivi. Eesmärk on lihtsustada informatsiooni saadavust ajal,
 mil analoogsed keskkonnad küsivad raha selle eest (ntx Annaabi.ee).
 
-<b>kirjeldus:</b>
+<b>Kirjeldus:</b>
 Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasid alla laadida.
 
-<b>funktsionaalsuse leotelu:</b>
+<b>Funktsionaalsuse leotelu:</b>
 <ul>
 <li>saab teha kasutaja ja sisse logida</li>
 <li>saab üles laadida ja alla tõmmata faile</li>
 <li>saab navigeerida portaali lehtede vahel</li>
 </ul>
 
-andmebaasi skeem loetava pildina - PUUDUB
-tabelite loomise SQL laused: (kui keegi teine tahab seda tööle panna); - PUUDUB
+<b>Andmebaasi skeem loetava pildina</b> - PUUDUB<br>
+<b>Tabelite loomise SQL laused:</b> (kui keegi teine tahab seda tööle panna); - PUUDUB<br>
 
 
-<b>kokkuvõte: mida õppisid juurde? mis ebaõnnestus? mis oli keeruline? (kirjutab iga tiimi liige):</b>
+<b>Kokkuvõte: mida õppisid juurde? mis ebaõnnestus? mis oli keeruline?</b> (kirjutab iga tiimi liige):
 <br>
 <b>Jan-Ross Liiver:</b><br>
 Õppisin rühmatöö raames seda, et tähtis on aru saada olemasolevatest ressurssidest, mis sul kasutusel on. ntx github, niiväga kui see minu-
