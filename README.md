@@ -4,7 +4,7 @@ TLÜ KODUTÖÖDE PORTAAL
 
 (PILT)  - PUUDUB
 
-Rühma liikmed:
+<b>Rühma liikmed:</b>
 Jan-Ross Liiver
 Peeter Roop
 Robin Nurk
