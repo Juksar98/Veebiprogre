@@ -1,7 +1,7 @@
 
 # Veebiprogre
-Iseseisev grupitöö
-TLÜ KODUTÖÖDE PORTAAL
+Iseseisev grupitöö <br>
+<b>TLÜ KODUTÖÖDE PORTAAL</b>
 
 (PILT)  - PUUDUB
 
@@ -22,8 +22,8 @@ Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasi
 
 <b>funktsionaalsuse leotelu:</b>
 <ul>
-<li>1.saab teha kasutaja ja sisse logida</li>
-<li>2.saab üles laadida ja alla tõmmata faile</li>
+<li>saab teha kasutaja ja sisse logida</li>
+<li>saab üles laadida ja alla tõmmata faile</li>
 <li>saab navigeerida portaali lehtede vahel</li>
 </ul>
 
@@ -33,15 +33,15 @@ tabelite loomise SQL laused: (kui keegi teine tahab seda tööle panna); - PUUDU
 
 <b>kokkuvõte: mida õppisid juurde? mis ebaõnnestus? mis oli keeruline? (kirjutab iga tiimi liige):</b>
 <br>
-Jan-Ross Liiver: 
+<b>Jan-Ross Liiver:</b> 
 Õppisin rühmatöö raames seda, et tähtis on aru saada olemasolevatest resurssidest, mis sul kasutusel on. ntx github, niiväga kui see minu-
 arust ka ebamugav keskkond pole, on siiski funktsionaalne töökeskkond, mille kasutamist tuleb mõista, et kasutada seda otstarbekalt.
 Kõige keerulisem asi projekti juures oli mõelda välja aja raames realiseeritav idee. Ideid on palju, kuid praeguse taseme juures ei ole võimalik
 kõike reaalselt ellu luua. Teisisõnu oma piirangute ja võimaluste avastamine oli läbivaks õppeprotsessiks.
 
-Peeter Roop:
+<b>Peeter Roop:</b>
 
-Oskar Juksar:
+<b>Oskar Juksar:</b>
 
-Robin Nurk:
+<b>Robin Nurk:</b>
 
