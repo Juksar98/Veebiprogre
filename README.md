@@ -31,7 +31,8 @@ Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasi
 <img src="https://imgur.com/BLdFe7z.jpg"><br>
 
 
-<b>Tabelite loomise SQL laused:</b> (kui keegi teine tahab seda tööle panna); - PUUDUB<br>
+<b>Tabelite loomise SQL laused:</b> (kui keegi teine tahab seda tööle panna);<br>
+<img src="https://imgur.com/AsxQlJ0.jpg"><br>
 
 
 <b>Kokkuvõte: mida õppisid juurde? mis ebaõnnestus? mis oli keeruline?</b> (kirjutab iga tiimi liige):
@@ -46,6 +47,9 @@ kõike reaalselt ellu luua. Teisisõnu oma piirangute ja võimaluste avastamine 
 Õppisin rühmatöö käigus, et peab korralikult koostööd tegema ja ülesanded ära jagama. Üle võrgu on keeruline samaaegselt veebilehte teha, kergem on kokku saada ja siis pead kokku panna.
 
 <b>Oskar Juksar:</b><br>
+Algul ei saanud meeskonna tööd vedama, siis ei saanud pidama. Tiimivaim oli õnneks kõrge ja suutsime tulla üle takistusest, mille me ise
+endale valmistasime ehk liiga suure eesmärgi seadmine. See hoidis meid küll tagasi, kuid lõpptulemusega oleme rahul. Kui oleks olnud
+natuke rohkem aega, siis oleks saanud veel seda isegi viimistleda.
 
 <b>Robin Nurk:</b><br>
 Rühmatöös õppisin seda, et on raske teha muudatusi enda töös üle interneti, kõige paremad tulemused töö edenemisel olid siis, kui grupi liikmed said näiteks koolis kokku ja hakkasid kõik töö kallal nokitsema. Sellisel viisil leidsime vigu kiiremini ning samuti leidsime lahendusi neile hõlpsamalt. Probleemiks tuli veel algselt töö keerukuse alahindamine ja seetõttu pidime muutma enda teemat ning kustutama osa enda tööst. 
