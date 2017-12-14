@@ -106,14 +106,20 @@ $dh = opendir($path);
 $i=1;
 while (($file = readdir($dh)) !== false) {
     if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
-        echo "<a href='$path/$file'>$file</a><br /><br />";
+        echo "<a href='$path/$file'>$file</a>";
+		echo "    ";
+		echo "<a href='mata.php?remove=$path/$file'>kustuta fail</a><br> <br>";
+		if(isset($_GET['remove'])){
+			unlink($_GET['remove']);
+			header('Location: mata.php');
+			}
         $i++;
     }
 }
 closedir($dh);
 
 ?>
-
+<p align="center"><a href="digitech.php">Tagasi instituudi lehele</a></p>
 <script>
     var selDiv = "";
         

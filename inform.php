@@ -77,11 +77,23 @@ if(isset($_POST["submit"])) {
 <head>
 	<link rel="stylesheet" type="text/css" href="indexstyle.css">
 	<meta charset="utf-8">
-	<ul>
-	<li><a href="index.php">Pealeht</a></li>
-	<li><a href="?Logout=1">Logi välja!</a></li>
-	</ul>
-	<title>Informaatika</title>
+	<header>
+	<div class="nav">
+		<ul>
+		<li><a href="index.php">Pealeht</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Instituudid</a>
+			<div class="dropdown-content">
+			<a href="digitech.php">Digitehnoloogiate Instituut</a>
+			<a href="haridus.php">Haridusteaduste Instituut</a>
+			<a href="yhiskond.php">Ühiskonnateaduste Instituut</a>
+			</div>
+		</li>
+		<li><a href="?Logout=1">Logi välja!</a></li>
+		</ul>
+	</div>
+	</header>
+	<title>Pealeht</title>
 </head>
 
 <body>
@@ -103,14 +115,20 @@ $dh = opendir($path);
 $i=1;
 while (($file = readdir($dh)) !== false) {
     if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
-        echo "<a href='$path/$file'>$file</a><br /><br />";
+        echo "<a href='$path/$file'>$file</a>";
+		echo "    ";
+		echo "<a href='mata.php?remove=$path/$file'>kustuta fail</a><br> <br>";
+		if(isset($_GET['remove'])){
+			unlink($_GET['remove']);
+			header('Location: mata.php');
+			}
         $i++;
     }
 }
 closedir($dh);
 
 ?>
-
+<p align="center"><a href="digitech.php">Tagasi instituudi lehele</a></p>
 <script>
     var selDiv = "";
         
