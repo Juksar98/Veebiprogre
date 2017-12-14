@@ -27,8 +27,8 @@ Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasi
 </ul>
 
 <b>Andmebaasi skeem loetava pildina</b> - 
-<img src="https://imgur.com/2ZMl46w"><br>
-<img src="https://imgur.com/BLdFe7z"><br>
+<img src="https://imgur.com/2ZMl46w.jpg"><br>
+<img src="https://imgur.com/BLdFe7z.jpg"><br>
 
 
 <b>Tabelite loomise SQL laused:</b> (kui keegi teine tahab seda tööle panna); - PUUDUB<br>
