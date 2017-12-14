@@ -48,4 +48,4 @@ kõike reaalselt ellu luua. Teisisõnu oma piirangute ja võimaluste avastamine 
 <b>Oskar Juksar:</b><br>
 
 <b>Robin Nurk:</b><br>
-
+Rühmatöös õppisin seda, et on raske teha muudatusi enda töös üle interneti, kõige paremad tulemused töö edenemisel olid siis, kui grupi liikmed said näiteks koolis kokku ja hakkasid kõik töö kallal nokitsema. Sellisel viisil leidsime vigu kiiremini ning samuti leidsime lahendusi neile hõlpsamalt. Probleemiks tuli veel algselt töö keerukuse alahindamine ja seetõttu pidime muutma enda teemat ning kustutama osa enda tööst. 
