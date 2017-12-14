@@ -1,7 +1,8 @@
 <h2>TLÜ KODUTÖÖDE PORTAAL</h2><br>
 Iseseisev grupitöö <br>
 
-<b>Pilt portaalist:</b>  - PUUDUB<br>
+<b>Pilt portaalist:</b><br>
+<img src="https://imgur.com/R1Jjlr9.jpg" alt="esileht"> 
 
 <b>Rühma liikmed:</b>
 Jan-Ross Liiver,
