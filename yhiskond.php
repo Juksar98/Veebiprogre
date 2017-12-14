@@ -6,7 +6,7 @@ require("config.php");
 require("functions.php");
 require("classes/failupload.class.php"); 
 
-$target_dir = ("matafailid/");
+$target_dir = ("yhiskondfailid/");
 $target_file = "";
 $uploadOk = 1;
 $failType = "";
@@ -44,7 +44,7 @@ if(isset($_GET["Logout"])){
 		if ($uploadOk == 0) {
 			$notice .= "Vabandust, pilti ei laetud üles! ";
 		} else {
-			 $my_folder = "matafailid/";
+			 $my_folder = "yhiskondfailid/";
 			copy($_FILES["fileToUpload"]["tmp_name"],$my_folder.$_FILES["fileToUpload"]["name"]);
 			echo "Fail üles laaditud.";
 			$myFail = new Failupload($_FILES["fileToUpload"]["tmp_name"], $failType);
@@ -71,7 +71,6 @@ if(isset($_GET["Logout"])){
 	}
 	}
 	}
-
 
 ?>
 
@@ -102,7 +101,8 @@ if(isset($_GET["Logout"])){
 </head>
 
 <body>
-<form action="mata.php"  id="myForm" method="POST" enctype="multipart/form-data">
+<h2>Ühiskonnateaduste instituut</h2><br>
+<form action="yhiskond.php"  id="myForm" method="POST" enctype="multipart/form-data">
 
         Files: <input type="file" id="fileToUpload" name="fileToUpload" multiple>
 			<input type="submit" value="Lae üles" name="submit">
@@ -110,40 +110,24 @@ if(isset($_GET["Logout"])){
 
       
 		
-</form>
+    </form>
 	
 <?php
 echo "Üles laetud failid";
 echo "<br /><br />";
-$path = "matafailid";
+$path = "yhiskondfailid";
 $dh = opendir($path);
 $i=1;
 while (($file = readdir($dh)) !== false) {
     if($file != "." && $file != ".." && $file != "index.php" && $file != ".htaccess" && $file != "error_log" && $file != "cgi-bin") {
-        echo "<a href='$path/$file'>$file</a>";
-		echo "    ";
-		echo "<a href='mata.php?remove=$path/$file'>kustuta fail</a><br> <br>";
-		if(isset($_GET['remove'])){
-			/*$mysqli = new mysqli($GLOBALS["serverHost"], $GLOBALS["serverUsername"], $GLOBALS["serverPassword"], $GLOBALS["database"]);
-			$stmt = $mysqli ->prepare("UPDATE wpfiles SET deleted = now() WHERE (userid = ? AND filename='?') ");
-			echo $mysqli->error;
-			$stmt -> bind_param("is", $_SESSION["userId"], $file);
-			if($stmt->execute()){					
-				$notice = "Kustutatud";
-				echo $notice;  TRA SEE SITT EI TÖÖÖÖÖTAAAAAAAAAA MA EI OSKA SEDA ID-D VÕI FAILINIME LEIDA SEALT NAHHUIII*/ 
-			unlink($_GET['remove']);
-			header('Location: mata.php');
-			}
-		$i++;
-}
+        echo "<a href='$path/$file'>$file</a><br /><br />";
+        $i++;
     }
 }
 closedir($dh);
 
-
-
 ?>
-<p align="center"><a href="digitech.php">Tagasi instituudi lehele</a></p>
+
 <script>
     var selDiv = "";
         
@@ -172,4 +156,3 @@ closedir($dh);
     </script>
 
 </body>
-</html>
