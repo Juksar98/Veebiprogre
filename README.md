@@ -26,7 +26,11 @@ Veebikeskkond kuhu saab üles laadida oma kodutöid, ning teiste tudengite omasi
 <li>saab navigeerida portaali lehtede vahel</li>
 </ul>
 
-<b>Andmebaasi skeem loetava pildina</b> - <img src="https://imgur.com/a/A0xJv"><br>
+<b>Andmebaasi skeem loetava pildina</b> - 
+<img src="https://imgur.com/2ZMl46w"><br>
+<img src="https://imgur.com/BLdFe7z"><br>
+
+
 <b>Tabelite loomise SQL laused:</b> (kui keegi teine tahab seda tööle panna); - PUUDUB<br>
 
 
