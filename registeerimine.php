@@ -1,5 +1,5 @@
 <?php
-
+//regamise leht
 require("functions.php");
 require("registyle.css");
 //require("index.js");
