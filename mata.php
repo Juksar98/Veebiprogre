@@ -137,7 +137,7 @@ while (($file = readdir($dh)) !== false) {
 		$i++;
 }
     }
-}
+
 closedir($dh);
 
 
