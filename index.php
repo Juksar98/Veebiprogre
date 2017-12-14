@@ -7,6 +7,7 @@ require("functions.php");
 	
 	//Kui pole sisseloginud, liigume login lehele
 if(!isset($_SESSION["userId"])){
+	session_destroy();
 	header("Location: login.php");
 	exit();
 }		
@@ -26,28 +27,38 @@ if(isset($_GET["Logout"])){
 <head>
 	<link rel="stylesheet" type="text/css" href="indexstyle.css">
 	<meta charset="utf-8">
-	<ul>
-	<li><a href="main.php">Pealeht</a></li>
-	<li><a href="?Logout=1">Logi välja!</a></li>
-	</ul>
+	<header>
+	<div class="nav">
+		<ul>
+		<li><a href="index.php">Pealeht</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Instituudid</a>
+			<div class="dropdown-content">
+			<a href="digitech.php">Digitehnoloogiate Instituut</a>
+			<a href="haridus.php">Haridusteaduste Instituut</a>
+			<a href="yhiskond.php">Ühiskonnateaduste Instituut</a>
+			</div>
+		</li>
+		<li><a href="?Logout=1">Logi välja!</a></li>
+		</ul>
+	</div>
+	</header>
 	<title>Pealeht</title>
 </head>
 
 
 
-<body>
-	<h2>Digitehnoloogiate instituut</h2><br>
-	<select name="aine" onchange="location = this.value;">
-	<option value="0" selected="selected">Vali endale sobiv aine..</option>
-	<option value="mata.php">Matemaatika</option>
-	<option value="info.php">Informaatika</option>
-	<option value="teadus.php">Infoteadus</option>
-	</select>
-	
-	<p>Palun mitte jagada neid väärtuslikke faile kellegagi väljastpoolt kooli!</p>
-	
-	
-	
+<body id="home">
+	<br><br><br><br><br><br><br>
+	<h1>Teretulemast TLU üliõpilaste kodutööde keskkonda </h1>
+	<br>
+	<br>
+	<div id="home">
+	<p>Meie motto: Tudengilt tudengile</p>
+	<p>Liiga pikalt on kestnud info maksuvalli taha peitmine, aeg see vabastada. Õppematerjale tuleb veel 21. sajandil osta portaalidest nagu annaabi.ee, et näha teise inimese
+	mõttenurka ülesande lahendamisele. Meie aitame astuda sammu lähemale infovabadusele. Lae oma kodutöö meie portaali üles ja vaata, mida teised on välja pakkunud. Vali instituut
+	ja näed koheselt mis juba on üleval. Aita rajada tee helgema tuleviku poole!</p>
+	</div>
 	
 </body>
 </html>

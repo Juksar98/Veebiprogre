@@ -33,7 +33,7 @@ require("config.php");
 				$notice = "Sisestasite vale salasõna!";
 			}
 		} else {
-			$notice = "Sellist kasutajat (" .$email .") ei ole!";
+			$notice = "Sellist kasutajat " .$loginEmail ." ei ole!";
 		}
 		return $notice;
 	}
@@ -54,7 +54,7 @@ function signUp($signupFirstName, $signupFamilyName, $signupEmail, $signupPasswo
 	//$stmt->execute();
 	if ($stmt->execute()){
 		//echo "\n Õnnestus!";
-		echo("<script>location.href = '/~rooppeet/Veebiprogre/login.php$msg';</script>");
+		echo("<script>location.href = 'login.php$msg';</script>");
 		exit();
 	} else {
 		echo "\n Tekkis viga : " .$stmt->error;
